@@ -7,7 +7,7 @@ class raxmonitoragent::install{
         content => "deb ${::raxmonitoragent::repo_url} cloudmonitoring main"
       }->
       exec{'monitor_aptget_key':
-        command=>'curl https://monitoring.api.rackspacecloud.com/pki/agent/linux.asc | sudo apt-key add -'
+        command=>'wget -q https://monitoring.api.rackspacecloud.com/pki/agent/linux.asc -O- | apt-key add -'
       }~>
       exec{'monitor_aptget_update':
         command=>'apt-get update'
@@ -15,7 +15,7 @@ class raxmonitoragent::install{
     }
 
   }
-
+  
   package{'rackspace-monitoring-agent':
     ensure=>'installed'
   }
