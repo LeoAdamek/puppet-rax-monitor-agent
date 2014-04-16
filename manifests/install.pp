@@ -1,7 +1,7 @@
 class raxmonitoragent::install{
 
   case $::operatingsystem {
-    'Ubuntu': {
+    'Ubuntu','Debian': {
       file{'monitoring_repo':
         path    => '/etc/apt/sources.list.d/rackspace-monitoring-agent.list',
         content => "deb ${::raxmonitoragent::repo_url} cloudmonitoring main"
