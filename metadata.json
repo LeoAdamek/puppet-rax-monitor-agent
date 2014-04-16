@@ -1,9 +1,9 @@
 {
   "name": "davidcollom-raxmonitoragent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "Rackspace Server Monitoring Agent",
   "author": "David Collom",
-  "description": "Installs and configures / Registered server with rackspace monitoring service",
+  "description": "Rackspace Monitoring Daemon installer + configuration",
   "dependencies": [],
   "types": [],
   "checksums": {},
