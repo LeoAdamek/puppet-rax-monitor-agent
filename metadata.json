@@ -1,5 +1,5 @@
 {
-  "name": "leoadamek-rackspacemonitoring",
+  "name": "leoadamek-raxmonitoragent",
   "version": "0.1.1",
   "summary": "Rackspace Server Monitoring Agent",
   "author": "David Collom",
